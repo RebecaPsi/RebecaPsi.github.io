@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Psi. Rebeca Soares</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f2347;
+      color: #d7f5e8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .left {
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #cce3db;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      border: 1px solid #d7f5e8;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #d7f5e8;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #d7f5e8;
+      color: #0f2347;
+    }
+
+  .image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  animation: floatIn 1.2s ease forwards;
+}
+
+object-position: center 30%;
+
+    /* RESPONSIVO (celular) */
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 40px;
+      }
+
+      .image img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    @keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name {
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+h1 {
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+h2 {
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+p {
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+}
+
+p:nth-of-type(1) { animation-delay: 0.8s; }
+p:nth-of-type(2) { animation-delay: 1s; }
+p:nth-of-type(3) { animation-delay: 1.2s; }
+p:nth-of-type(4) { animation-delay: 1.4s; }
+
+.btn {
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+.crp {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #cce3db;
+
+  opacity: 0;
+  animation: floatIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="layout">
+
+      <!-- LADO ESQUERDO -->
+      <div class="left">
+        <div class="name">Psi. Rebeca Soares</div>
+
+        <h1>Bem vindo(a) a este espaço</h1>
+
+        <h2>Quem sou eu ?</h2>
+
+        <p>
+          Sou <strong>Rebeca Soares</strong>, psicóloga clínica, e atuo com a Terapia Cognitivo-Comportamental (TCC),
+          uma abordagem amplamente reconhecida por sua eficácia no tratamento de diversas demandas emocionais.
+        </p>
+
+        <p>
+          Ofereço um espaço de escuta qualificada e acolhimento, onde você pode se expressar com segurança e sem julgamentos.
+          No processo terapêutico, trabalhamos juntos para compreender a relação entre pensamentos, emoções e comportamentos,
+          construindo estratégias mais funcionais para lidar com os desafios do dia a dia.
+        </p>
+
+        <p>
+          Acredito na psicoterapia como um encontro genuinamente humano, conduzido com sensibilidade, ética e compromisso com o seu processo.
+        </p>
+
+        <p>
+          Se você percebe que chegou o momento de olhar com mais cuidado para si,
+          dar novos significados à sua história e encontrar caminhos mais leves para viver,
+          estou aqui para caminhar ao seu lado.
+        </p>
+
+         
+        <p class="crp">CRP: 01/29997 </p>
+
+        <a class="btn" href="https://wa.me/556181246098" target="_blank">
+          Fale comigo
+        </a>
+      </div>
+
+      <!-- LADO DIREITO (IMAGEM) -->
+      <div class="image">
+        <img src="fotoRebeca.jpg" alt="Foto da psicóloga">
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
